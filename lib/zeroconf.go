@@ -4,6 +4,7 @@ import (
 	"log"
 	"net"
 	"os"
+	"os/exec"
 )
 
 // MyName tries to resolve a zeroconf local domain name and returns it,
@@ -52,4 +53,8 @@ func MyIP() net.IP {
 		}
 	}
 	return net.IPv4(127, 0, 0, 1)
+}
+
+func PrepareWorkingDir() {
+	exec.Command("/bin/sh", "-c", "mkdir /tmp/http-server").Run()
 }
