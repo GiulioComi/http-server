@@ -40,7 +40,6 @@ func UploaderEndpoint(name, path, webpath, token string) http.HandlerFunc {
 				Endpoint string
 			}{}
 			fill.Endpoint = path
-			//TODO use a cookie instead
 			err = t.Execute(w, fill)
 			if err != nil {
 				log.Println(err)
