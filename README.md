@@ -46,7 +46,8 @@ Press Control+C to stop
 curl -i -s -k  -X $'POST' \
     -H $'Host: 10.0.2.15:8086' -H $'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' -H $'Accept-Language: en-US,en;q=0.5' -H $'Accept-Encoding: gzip, deflate' -H $'Referer: https://[URL]/upload' -H $'DNT: 1' -H $'Connection: close' -H $'Upgrade-Insecure-Requests: 1' -H $'Content-Type: multipart/form-data; boundary=---------------------------606768120669673484490201340' -H $'Content-Length: 140654' \
     --data-binary $'-----------------------------\x0d\x0aContent-Disposition: form-data; name=\"uploadfile\"; filename=\"[FILENAME]\"\x0d\x0aContent-Type: [CONTENT-TYPE]\x0d\x0a\x0d\x0a[CONTENT]\x0d\x0a-----------------------------\x0d\x0aContent-Disposition: form-data; name=\"token\"\x0d\x0a\x0d\x0ad0cd53e404919e8509f9\x0d\x0a-------------------------------\x0d\x0a' \
-    $'https://[URL]/upload'```
+    $'https://[URL]/upload'
+ ```
 
 ## Credits
 Thanks to empijei for initial inspiration (https://github.com/empijei/serve).
