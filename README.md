@@ -4,7 +4,6 @@ This simple HTTPS server provides download (with directory listing feature) and 
 * Supports TLS
 * Directory listing for the files to download
 * Upload files to the shared directory
-* Finds local network ip address
 * Provide some security checks (whitelist to prevent path traversal, token to prevent unauthorized uploads)
 
 ### Install
